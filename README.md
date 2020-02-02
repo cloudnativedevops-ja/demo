@@ -1,3 +1,49 @@
+# Kubernetes で実践するクラウドネイティブ DevOps
+
+![Kubernetes で実践するクラウドネイティブ DevOps の表紙](/img/cover-ja.jpg)
+
+ようこそ！このリポジトリは、オライリー・ジャパン「Kubernetes で実践するクラウドネイティブ DevOps」に付属するサンプルコードです。原著である「Cloud Native DevOps with Kubernetes」が提供するサンプルコードから2019年10月時点で最新バージョンの Kubernetes 1.16 で動作するように修正しています。
+
+本書の購入はこちらから:
+
+* [アマゾン](https://www.amazon.co.jp/dp/4873119014/)
+
+* [O'Reilly Japan](https://www.oreilly.co.jp/books/9784873119014/)
+
+## 環境
+
+サンプルコードのビルドと実行には次が必要です。
+
+* Go バージョン 1.11 またはそれ以上
+* Docker バージョン 18.3 またはそれ以上
+
+## Kubernetes クラスタの構築
+
+サンプルの設定ファイルは、Kubernetes 1.16 で動作を確認しています。ローカル環境に Kubernetes クラスタを構築するには Minikube または Kind、Docker Desktop が使用できます。Docker Desktop のセットアップ手順は本書に記載がありますのでご参照ください。
+
+ここでは、Minikube と Kind で Kubernetes 1.16 のクラスタを作成する方法を説明します。
+
+### Minikube
+
+Minikube のインストールは「[Minikube のインストール](https://kubernetes.io/ja/docs/tasks/tools/install-minikube/)」にしたがってください。
+```
+minikube start --kubernetes-version=v1.16.4
+```
+
+### Kind
+
+Kind のインストールは「[Quick Start](https://kind.sigs.k8s.io/docs/user/quick-start/)」にしたがってください。
+
+```
+kind create cluster --image=kindest/node:1.16.4
+```
+
+## オリジナルコード
+
+サンプルコードのオリジナルは、 https://github.com/cloudnativedevops/demo です。
+
+---
+
 # Cloud Native DevOps with Kubernetes
 
 ![Cloud Native DevOps cover image](/img/cover.jpg)
